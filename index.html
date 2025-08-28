@@ -8,15 +8,24 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f7fa;
+      background: url('https://copilot.microsoft.com/th/id/BCO.17c17391-30ee-4f1b-addd-f276c23d51f7.png') no-repeat center center fixed;
+      background-size: cover;
       color: #222;
     }
+
+    /* Overlay to improve readability */
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.85);
+      min-height: 100vh;
+    }
+
     header {
       background-color: #002b5c;
       color: white;
       padding: 30px 20px;
       text-align: center;
     }
+
     .logo-container {
       display: flex;
       align-items: center;
@@ -24,18 +33,22 @@
       gap: 15px;
       flex-wrap: wrap;
     }
+
     .logo-container img {
       height: 80px;
     }
+
     .logo-container h1 {
       font-size: 2.8em;
       margin: 0;
     }
+
     header p {
       font-size: 1.2em;
       font-style: italic;
       margin-top: 10px;
     }
+
     nav {
       background-color: #004080;
       display: flex;
@@ -43,29 +56,34 @@
       gap: 30px;
       padding: 12px;
     }
+
     nav a {
       color: white;
       text-decoration: none;
       font-weight: 600;
     }
+
     nav a:hover {
       color: #00b4d8;
     }
+
     .hero {
       padding: 60px 20px;
       text-align: center;
-      background: linear-gradient(to right, #e0f7fa, #f1f1f1);
     }
+
     .hero h2 {
       font-size: 2.2em;
       margin-bottom: 15px;
     }
+
     .hero p {
       font-size: 1.1em;
       color: #555;
       max-width: 700px;
       margin: 0 auto;
     }
+
     .cta-button {
       margin-top: 25px;
       padding: 12px 24px;
@@ -76,19 +94,22 @@
       font-size: 1em;
       cursor: pointer;
     }
+
     .cta-button:hover {
       background-color: #005a9e;
     }
+
     .products, .contact {
       padding: 50px 20px;
-      background-color: #ffffff;
       text-align: center;
     }
+
     .products h3, .contact h3 {
       font-size: 2em;
       margin-bottom: 20px;
       color: #002b5c;
     }
+
     .product-card, .contact-card {
       max-width: 700px;
       margin: 0 auto;
@@ -97,14 +118,17 @@
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
     .product-card h4 {
       font-size: 1.5em;
       margin-bottom: 10px;
     }
+
     .product-card p, .contact-card p {
       font-size: 1em;
       color: #444;
     }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -115,49 +139,49 @@
   </style>
 </head>
 <body>
+  <div class="overlay">
+    <header>
+      <div class="logo-container">
+        <img src="https://copilot.microsoft.com/th/id/BCO.17c17391-30ee-4f1b-addd-f276c23d51f7.png" alt="RB1TXZ Hurricane Logo">
+        <h1>RB1TXZ</h1>
+      </div>
+      <p>Transform Reinsurance Performance</p>
+    </header>
 
-  <header>
-    <div class="logo-container">
-      <img src="https://copilot.microsoft.com/th/id/BCO.17c17391-30ee-4f1b-addd-f276c23d51f7.png" alt="RB1TXZ Hurricane Logo">
-      <h1>RB1TXZ</h1>
-    </div>
-    <p>Transform Reinsurance Performance</p>
-  </header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Solutions</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+    </nav>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Solutions</a>
-    <a href="#">Products</a>
-    <a href="#">Contact</a>
-  </nav>
+    <section class="hero">
+      <h2>Precision. Performance. Partnership.</h2>
+      <p>RB1TXZ delivers data-driven solutions that reshape the reinsurance landscape. We empower clients with tools that optimize underwriting, streamline operations, and unlock strategic value across portfolios.</p>
+      <button class="cta-button" onclick="alert('Let’s explore how RB1TXZ can elevate your performance.')">Explore Solutions</button>
+    </section>
 
-  <section class="hero">
-    <h2>Precision. Performance. Partnership.</h2>
-    <p>RB1TXZ delivers data-driven solutions that reshape the reinsurance landscape. We empower clients with tools that optimize underwriting, streamline operations, and unlock strategic value across portfolios.</p>
-    <button class="cta-button" onclick="alert('Let’s explore how RB1TXZ can elevate your performance.')">Explore Solutions</button>
-  </section>
+    <section class="products">
+      <h3>Our Products</h3>
+      <div class="product-card">
+        <h4>🌪️ Hurricane Prediction – Gulf of America</h4>
+        <p>RB1TXZ’s predictive analytics platform delivers high-resolution forecasts for hurricane activity across the Gulf of America. Leveraging satellite data, oceanic models, and machine learning, our system provides insurers and reinsurers with actionable insights to mitigate risk and optimize exposure.</p>
+      </div>
+    </section>
 
-  <section class="products">
-    <h3>Our Products</h3>
-    <div class="product-card">
-      <h4>🌪️ Hurricane Prediction – Gulf of America</h4>
-      <p>RB1TXZ’s predictive analytics platform delivers high-resolution forecasts for hurricane activity across the Gulf of America. Leveraging satellite data, oceanic models, and machine learning, our system provides insurers and reinsurers with actionable insights to mitigate risk and optimize exposure.</p>
-    </div>
-  </section>
+    <section class="contact">
+      <h3>Contact Us</h3>
+      <div class="contact-card">
+        <p><strong>Professor Zainy</strong></p>
+        <p>Email: <a href="mailto:Zainy@ames.com">Zainy@ames.com</a></p>
+        <p>Telephone: <a href="tel:+44014014575730">0040 1457 5730</a></p>
+      </div>
+    </section>
 
-  <section class="contact">
-    <h3>Contact Us</h3>
-    <div class="contact-card">
-      <p><strong>Professor Zainy</strong></p>
-      <p>Email: <a href="mailto:Zainy@ames.com">Zainy@ames.com</a></p>
-      <p>Telephone: <a href="tel:+44014014575730">0040 1457 5730</a></p>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 RB1TXZ Ltd. All rights reserved. | Registered in England & Wales
-  </footer>
-
+    <footer>
+      &copy; 2025 RB1TXZ Ltd. All rights reserved. | Registered in England & Wales
+    </footer>
+  </div>
 </body>
 </html>
